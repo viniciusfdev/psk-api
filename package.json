@@ -1,0 +1,35 @@
+{
+  "name": "psk-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "startServer": "NODE_ENV=development nodemon server.js",
+    "startDB": "sudo docker run -p 27018:27017 -e 'MONGO_INITDB_ROOT_USERNAME=root' -e 'MONGO_INITDB_ROOT_PASSWORD=1234' --name mongodb -d mongo:4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusfdev/psk-api.git"
+  },
+  "maintainers": [
+    "vinicius frança",
+    "samuel santos",
+    "gustavo zille",
+    "pierre vieira",
+    "marcos junio"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusfdev/psk-api/issues"
+  },
+  "homepage": "https://github.com/viniciusfdev/psk-api#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.1.1"
+  },
+  "type": "module"
+}
