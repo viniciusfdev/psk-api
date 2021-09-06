@@ -53,6 +53,8 @@ export default class Database {
    * @param {Object|Object[]} data
    */
   static async createOne(collection, data) {
+    console.log("Creating", collection, data);
+
     if (!data._id) {
       data._id = new ObjectId().toHexString();
     }
